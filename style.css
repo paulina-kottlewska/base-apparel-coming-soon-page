@@ -19,28 +19,28 @@
     --line-height-text-mobile: 1.5rem;
     --error-message-mobile: 0.7rem;
 
-    --title-size-1100px: 3.4rem;
-    --line-height-title-1100px: 3.6rem;
-    --text-size-1100px: 0.85rem;
-    --error-message-1100px: 0.75rem;
+    --title-size-1100px: 4.2rem;
+    --line-height-title-1100px: 4.5rem;
+    --text-size-1100px: 1rem;
+    --line-height-text-1100px: 1.6rem;
+    --error-message-1100px: 0.85rem;
 
-    --title-size-1400px: 5.2rem;
-    --line-height-title-1400px: 5.4rem;
-    --text-size-1400px: 1.3rem;
-    --line-height-text-1400px: 1.9rem;
-    --error-message-1400px: 1rem;
+    --title-size-1500px: 5.8rem;
+    --line-height-title-1500px: 6.1rem;
+    --text-size-1500px: 1.4rem;
+    --line-height-text-1500px: 2rem;
+    --error-message-1500px: 1.1rem;
 
     --footer-size-mobile: 0.6rem;
 
     /* Border radius*/
     --border-radius: 25px;
-    --border-radius-1400px: 30px;
+    --border-radius-1500px: 35px;
 }
 
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
@@ -179,7 +179,7 @@ input.invalid::placeholder {
 
 @media (min-width: 1100px) {
     main {
-        background: url(images/bg-pattern-desktop.svg) no-repeat left center/ cover;
+        background: url(images/bg-pattern-desktop.svg) no-repeat left center/ 70%;
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -188,16 +188,16 @@ input.invalid::placeholder {
         "logo img"
         "content img";
         grid-template-columns: 2fr 42%;
-        grid-template-rows: 23% 2fr;
+        grid-template-rows: 22% 2fr;
     }
     
     .logo-div {
         grid-area: logo;
-        padding: 3rem 0 0;
+        padding: 4rem 0 0;
     }
 
     .logo {
-        width: 120px;
+        width: 155px;
     }
 
     .content {
@@ -209,7 +209,7 @@ input.invalid::placeholder {
 
     .logo-div, .content {
         margin: 0 auto;
-        width: 420px;
+        width: 540px;
     }
 
     .img-div {
@@ -235,21 +235,22 @@ input.invalid::placeholder {
 
     .text {
         font-size: var(--text-size-1100px);
-        padding: 0 3rem 0 0;
+        line-height: var(--line-height-text-1100px);
+        padding: 0 6rem 0 0;
     }
 
     form {
-        margin: 2rem 0;
+        margin: 2.5rem 0;
         padding: 0;
-        width: 88%;
+        width: 80%;
     }
 
     #email, button {
-        height: 45px;
+        height: 50px;
     }
 
     button {
-        width: 80px;
+        width: 90px;
     }
 
     #email {
@@ -273,15 +274,15 @@ input.invalid::placeholder {
     }
 }
 
-@media(min-width: 1475px) {
+@media(min-width: 1575px) {
 
     main {
-        grid-template-rows: 25% 2fr;
+        grid-template-rows: 28% 2fr;
     }
 
     .logo-div {
         grid-area: logo;
-        padding: 5rem 0 0;
+        padding: 7rem 0 0;
     }
 
     .logo {
@@ -289,46 +290,47 @@ input.invalid::placeholder {
     }
 
     .logo-div, .content {
-        width: 610px;
+        width: 660px;
     }
 
     .title {
-        font-size: var(--title-size-1400px);
-        line-height: var(--line-height-title-1400px);
+        font-size: var(--title-size-1500px);
+        line-height: var(--line-height-title-1500px);
         letter-spacing: 0.9rem;
     }
 
     .text {
-        font-size: var(--text-size-1400px);
-        line-height: var(--line-height-text-1400px);
+        font-size: var(--text-size-1500px);
+        line-height: var(--line-height-text-1500px);
+        padding: 0 4rem 0 0;
     }
 
     form {
-        width: 92%;
+        width: 90%;
     }
 
     #email {
-        font-size: var(--text-size-1400px);
+        font-size: var(--text-size-1500px);
     }
 
     #email.invalid {
-        background: url(images/icon-error.svg) no-repeat 82% 50% / 20px;
+        background: url(images/icon-error.svg) no-repeat 78% 50% / 25px;
     }
 
     #email, button {
-        height: 58px;
-        border-radius: var(--border-radius-1400px);
+        height: 65px;
+        border-radius: var(--border-radius-1500px);
     }
 
     button {
-        width: 100px;
+        width: 120px;
     }
 
     .arrow {
-        width: 12px;
+        width: 14px;
     }
 
     .message {
-        font-size: var(--error-message-1400px);
+        font-size: var(--error-message-1500px);
     }
 }
