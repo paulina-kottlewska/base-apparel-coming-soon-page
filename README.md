@@ -33,13 +33,13 @@ Users should be able to:
 ### Screenshots
 
 ![](images/base-apparel-coming-soon-mobile.JPG)
-![](images/base-apparel-coming-soon-desktop.JPG)
-![](images/base-apparel-coming-soon-active-states.JPG)
+![](images/base-apparel-coming-soon--desktop.JPG)
+![](images/base-apparel-coming-soon--active-states.JPG)
 
 
 ### Link
 
-- Live Site URL: (https://base-apparel-coming-soon-page-pk.netlify.app/)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
